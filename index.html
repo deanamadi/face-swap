@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AI Face Swap</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="app.js" defer></script>
+</head>
+<body>
+    <div class="container">
+        <h1>AI Face Swap</h1>
+        <form id="faceSwapForm">
+            <label for="targetImage">Original Image</label>
+            <input type="file" id="targetImage" accept="image/*" required>
+
+            <label for="sourceImage">Face Image</label>
+            <input type="file" id="sourceImage" accept="image/*" required>
+
+            <label for="matchGender">Match Gender:</label>
+            <input type="checkbox" id="matchGender">
+
+            <label for="maxSwapNumber">Maximum Face Swap Number:</label>
+            <input type="number" id="maxSwapNumber" min="1" value="1">
+            
+            <button type="submit">Swap Faces</button>
+        </form>
+        <div id="resultContainer"></div>
+    </div>
+</body>
+</html>
