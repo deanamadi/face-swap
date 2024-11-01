@@ -8,8 +8,20 @@
     <script src="app.js" defer></script>
 </head>
 <body>
+
+    <nav>
+        <div class="logo">
+            <img class="logo__img" src="./assets/logo.png">
+            <div class="logo__text">AI Face Swap</div>
+        </div>
+        <ul>
+            <li><a href="#" class="nav__link">Link A</a></li>
+            <li><a href="#" class="nav__link">Link B</a></li>
+            <li><a href="#" class="nav__link nav__link--primary">Explore Faces</a></li>
+        </ul>
+    </nav>
+
     <div class="container">
-        <h1>AI Face Swap</h1>
         <form id="faceSwapForm">
             <label for="targetImage">Original Image</label>
             <input type="file" id="targetImage" accept="image/*" required>
